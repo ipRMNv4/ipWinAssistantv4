@@ -56,5 +56,5 @@ By using this software, you agree to abide by the terms of the license.
 ## Acknowledgments
 ---------------
 
-* Special thanks to [Gemini AI](https://gemini.ai) for their API and support
+* Special thanks to [Gemini AI](https://gemini.google.com) for their API and support
 * Thanks to the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) for their API and documentation
