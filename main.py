@@ -8,7 +8,7 @@ import re
 import psutil
 import subprocess
 import notes
-
+from download import download_file
 def show_news(newsapi, country='in'):
     url = 'https://newsapi.org/v2/top-headlines'
     params = {
@@ -172,6 +172,13 @@ def main():
                 if input("Type 'exit' to go back: ").lower() == "exit":
                     break
 
+        elif i == "open discord" or i == "open dc":
+            subprocess.Popen(r"PATH TO DISCORD")
+
+        elif i == "download":
+            print("Paste the download link of the file here: ")
+            linkk = input()
+            download_file(linkk)
         else:
             chat.send_message(i)
             latest_message = chat.history[-1]
