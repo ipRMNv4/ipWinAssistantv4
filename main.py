@@ -7,6 +7,7 @@ import time
 import re
 import psutil
 import subprocess
+import notes
 
 def show_news(newsapi, country='in'):
     url = 'https://newsapi.org/v2/top-headlines'
@@ -164,6 +165,12 @@ def main():
             if news:
                 for article in news:
                     print(f"Title: {article['title']}\nURL: {article['url']}\n")
+
+        elif i == "notes":
+            while True:
+                notes.notes()
+                if input("Type 'exit' to go back: ").lower() == "exit":
+                    break
 
         else:
             chat.send_message(i)
